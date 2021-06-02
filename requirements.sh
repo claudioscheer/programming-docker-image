@@ -66,4 +66,4 @@ export SYSTEMD_EDITOR="nvim"
 EOF
 
 # Clean build files.
-rm -rf requirements.sh awscliv2.zip aws
+rm -rf /requirements.sh awscliv2.zip aws/
