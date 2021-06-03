@@ -8,3 +8,10 @@ This image is the base for my programming setup. The image has the following sof
 - CMake;
 - Node.js;
 - JupyterLab;
+
+
+# Docker Hub
+
+```
+docker pull claudioscheer/programming
+```

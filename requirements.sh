@@ -38,10 +38,6 @@ mkdir ~/.vim/undodir -p
 
 wget https://raw.githubusercontent.com/claudioscheer/dotfiles/master/.tmux.conf -O ~/.tmux.conf
 
-# curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip
-# unzip awscliv2.zip
-# ./aws/install
-
 cat >> ~/.bashrc<< EOF
 alias ga="git add"
 alias gl="git pull"
@@ -66,4 +62,5 @@ export SYSTEMD_EDITOR="nvim"
 EOF
 
 # Clean build files.
-rm -rf /requirements.sh awscliv2.zip aws/
+rm -rf /requirements.sh
+rm -rf /var/lib/apt/lists/*
