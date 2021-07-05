@@ -73,3 +73,4 @@ EOF
 # Clean build files.
 rm -rf /requirements.sh
 rm -rf /var/lib/apt/lists/*
+rm -rf /tmp/*
