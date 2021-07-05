@@ -67,6 +67,7 @@ export SYSTEMD_EDITOR="nvim"
 
 export GOROOT=/opt/go
 export PATH=\$GOROOT/bin:\$PATH
+export GO111MODULE=on
 EOF
 
 # Clean build files.
