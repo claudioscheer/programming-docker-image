@@ -15,7 +15,9 @@ apt-get install -y apt-utils \
     tmux \
     xclip \
     zip \
-    unzip
+    unzip \
+    golang-1.15 \
+    golang
 
 pip3 install 'python-language-server[all]' black jupyterlab
 
