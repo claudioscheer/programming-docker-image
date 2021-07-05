@@ -8,6 +8,7 @@ This image is the base for my programming setup. The image has the following sof
 - CMake;
 - Node.js;
 - JupyterLab;
+- Golang 1.15
 
 
 # Docker Hub
