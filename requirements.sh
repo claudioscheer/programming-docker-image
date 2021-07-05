@@ -15,9 +15,7 @@ apt-get install -y apt-utils \
     tmux \
     xclip \
     zip \
-    unzip \
-    golang-1.15 \
-    golang
+    unzip
 
 pip3 install 'python-language-server[all]' black jupyterlab
 
@@ -30,6 +28,11 @@ yarn global add yaml-language-server
 add-apt-repository ppa:neovim-ppa/unstable -y
 apt-get install neovim -y
 ln -s /usr/bin/nvim /usr/bin/vim
+
+cd /tmp
+wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz
+tar -xvf go1.16.5.linux-amd64.tar.gz
+mv go /opt
 
 mkdir -p ~/.config/nvim
 wget https://raw.githubusercontent.com/claudioscheer/dotfiles/master/.config/nvim/init.vim -O ~/.config/nvim/init.vim
@@ -61,6 +64,10 @@ stty -ixon
 
 export EDITOR="nvim"
 export SYSTEMD_EDITOR="nvim"
+
+export GOROOT=/opt/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 EOF
 
 # Clean build files.

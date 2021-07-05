@@ -1,2 +1,2 @@
 build:
-	docker build -t claudioscheer/programming-development .
+	docker build -t claudioscheer/programming .
