@@ -66,9 +66,13 @@ export EDITOR="nvim"
 export SYSTEMD_EDITOR="nvim"
 
 export GOROOT=/opt/go
-export PATH=\$GOROOT/bin:\$PATH
+export GOPATH=\$HOME/go
+export PATH=\$GOROOT/bin:\$GOPATH/bin:\$PATH
 export GO111MODULE=on
 EOF
+
+export GOPATH=$HOME/go
+/opt/go/bin/go get golang.org/x/tools/gopls@latest
 
 # Clean build files.
 rm -rf /requirements.sh
